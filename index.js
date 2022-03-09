@@ -180,8 +180,14 @@ Use the filterByWord function below to do the following:
 */
 
 
-function filterByWord(/*your code here*/){
-  /*your code here*/
+function filterByWord(array, word){
+  let filteredArray = [];
+  for (let i = 0; i < array.length; i++){
+    if (array[i].includes(word)) {
+      filteredArray.push(array[i]);
+    }
+  }
+  return filteredArray;
 }
 
 
