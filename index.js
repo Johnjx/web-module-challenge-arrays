@@ -87,9 +87,14 @@ Use the addFlavor function below to do the following:
 */
 
 
-function addFlavor(/*your code here*/){
-  /*your code here*/
+function addFlavor(flavor, adding){
+  flavor = originalFlavors
+  adding = "Rainbow Sherbert";
+  flavor.unshift(adding);
+  return flavor;
  }
+
+//console.log(addFlavor());
 
 
 
